@@ -1,8 +1,20 @@
 #!/usr/bin/python3
-""" State Module for HBNB project """
+"""
+Module that creates States
+"""
+
 from models.base_model import BaseModel
 
 
 class State(BaseModel):
-    """ State class """
+    """class State that inherits from BaseModel
+    public class attribute:
+    name: string - empty string
+    """
+
     name = ""
+
+    def __init__(self, *args, **kwargs):
+        """create new state
+        """
+        super().__init__(self, *args, **kwargs)
